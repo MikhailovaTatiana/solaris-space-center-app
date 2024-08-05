@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --sun-color: #ffd029;
+    --earth-color: #428ed4;
+    --mercury-color: #8c8a85;
+    --mars-color: #ef5f5f;
+    --venus-color: #e7cccc;
+    --jupiter-color: #e29468;
+    --saturn-color: #c7aa72;
+    --saturn-ring-color: #ddccaa;
+    --uranus-color: #c9d4f1;
+    --neptune-color: #7a91a7;
+    --gold-letters-color: #ffd029;
+    --white-letters-color: #ffffff;
+    --background-right-color: #190b22;
+    --background-left-color: #0f184d;
+}
