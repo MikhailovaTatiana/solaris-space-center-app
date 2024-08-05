@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,4 +22,39 @@
     --white-letters-color: #ffffff;
     --background-right-color: #190b22;
     --background-left-color: #0f184d;
+}
+
+body {
+    background-image: linear-gradient(to left, var(--background-right-color),var(--background-left-color));
+    color: var(--white-letters-color);
+    padding: 2rem 2rem 2rem 0;
+    min-height: 100vh;
+    min-width: 990px;
+}
+
+h1 {
+    font-family: Secular One;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.09em;
+    text-align: right;
+}
+
+h2 {
+    color: var(--gold-letters-color);
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.6em;
+    text-align: right;
+}
+
+main {
+    
+}
+
+footer {
+    
 }
