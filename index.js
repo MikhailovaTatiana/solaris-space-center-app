@@ -1,37 +1,34 @@
-// One function per person!
-// Anna, Louise, Michael, Tatiana
+// See the fetch in hidden_key.js locally
 
-// 1) see the fetch in keys.js
+// Alla
+// Window addeventlistener function
+window.addEventListener("load", async () => {
+  let key = fetchPlanetsApiKey();
+  await fetchPlanets(key);
+});
 
-
-//  2) fetch data using the key
-// Louise
+// Alla
+// Fetch data using the key
 async function fetchPlanets() {
-    let response = await fetch('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', { 
-        method: 'GET',
-        headers: { 'x-zocom' : HIDDEN_KEY}
-       
-    });
+    let response = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies", {
+            method: "GET",
+            headers: { "x-zocom": HIDDEN_KEY },
+        }
+    );
     let data = await response.json();
     console.log(data);
-    
     return data.bodies;
 }
 
-//  3) display data in local storage
-// storePlanets();
 
-//  4) window addeventlistener function
 
-window.addEventListener("load", async () => {
-  let key = fetchPlanetsApiKey();
-//   console.log('key', key);
-  
-  let planetsList = await fetchPlanets(key);
-//   console.log('planetsList', planetsList);
-  
+// TODO
 
-//   storePlanets();
-});
+// Display data in local storage
+// storePlanets() {};
 
-function createPlanetCards() {}
+// Create temlpate for a planet
+// function createPlanetCards() {};
+
+// Create a single planet info
+// function createPlanetInfo() {};

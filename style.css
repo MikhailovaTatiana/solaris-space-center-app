@@ -41,6 +41,10 @@ body {
     flex-direction: column;
 }
 
+.planet-header {
+    height: 10%;
+}
+
 nav {
     width: 30%;
     display: flex;
@@ -101,7 +105,7 @@ h5 {
 .planet-main {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .planets {
@@ -189,7 +193,7 @@ h5 {
     position: absolute;
     top: -33%;
     right: 88%;
-    opacity: .3;
+    opacity: .1;
 }
 
 .shadow-2 {
@@ -198,17 +202,15 @@ h5 {
     position: absolute;
     top: -33%;
     right: 83%;
-    opacity: .3;
+    opacity: .1;
 }
 
 .planet-info {
-    flex: 1;
-    width: 50%;
+    flex: 3;
     align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1rem;
 }
 
 .planet-data {
@@ -241,6 +243,7 @@ h5 {
     line-height: 30.6px;
     text-align: left;
     padding: 1rem 0;
+    width: 80%;
 }
 
 #add-favorite-btn {
@@ -254,7 +257,7 @@ h5 {
 }
 
 footer {
-    height: 15%;
+    height: 10%;
     text-align: center;
     font-size: .7rem;
     padding-top: 5rem;
