@@ -7,7 +7,8 @@ window.addEventListener("load", async () => {
   let planetList = await fetchPlanets(key);
   storePlanets(planetList);
   changePageHeader();
-  choosePlanet();
+  let planetName = choosePlanet();
+  createPlanetInfo(planetName); // do toLowerCase() before comparing
 });
 
 // Alla
@@ -53,6 +54,7 @@ function choosePlanet() {
     planet.addEventListener("click", () => {
       planetName = `${planet.id.toString()}`;
       window.open("planet.html", "_self");
+      return planetName;
     });
   });
 }
