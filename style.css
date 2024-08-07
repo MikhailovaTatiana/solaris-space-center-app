@@ -50,7 +50,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-left: 10%;
-    
+
     a {
         text-decoration: none;
         color: skyblue;
@@ -121,7 +121,7 @@ h5 {
     aspect-ratio: 1;
 }
 
-#sun {
+#sol {
     width: 1278px;
     background-color: var(--sun-color);
     flex: 1;
@@ -130,7 +130,7 @@ h5 {
     right: 93%;
 }
 
-#mercury {
+#merkurius {
     width: 14px;
     background-color: var(--mercury-color);
 }
@@ -140,7 +140,7 @@ h5 {
     background-color: var(--venus-color);
 }
 
-#earth {
+#jorden {
     width: 28px;
     background-color: var(--earth-color);
 }
@@ -155,7 +155,7 @@ h5 {
     background-color: var(--jupiter-color);
 }
 
-#saturn {
+#saturnus {
     width: 144px;
     background-color: var(--saturn-color);
 }
@@ -165,7 +165,7 @@ h5 {
     background-color: var(--uranus-color);
 }
 
-#neptune {
+#neptunus {
     width: 66px;
     background-color: var(--neptune-color);
 }
@@ -215,7 +215,7 @@ h5 {
 
 .planet-data {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
 .info-left,
