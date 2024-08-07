@@ -53,5 +53,4 @@ function changePageHeader() {
 // Create temlpate for a planet
 // function createPlanetCards() {};
 
-// Create a single planet info
-// function createPlanetInfo() {};
+
