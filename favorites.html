@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Favorite planets</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">hemsida</a>
-            </nav>
-            <h1>Favoriter</h1>
-            <h2>Planetarium</h2>
-        </header>
-        <main class="favorites-main">
-            <span class="planet sun"></span>
 
-            <div class="planet-card">
-                <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
-                <div class="container">
-                    <h4>PLANET NAME</h4>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite planets</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-            <div class="planet-card">
-                <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
-                <div class="container">
-                    <h4>PLANET NAME</h4>
-                </div>
+<body class="favorites-body">
+    <header>
+        <nav>
+            <a href="index.html">hemsida</a>
+        </nav>
+        <h1>Favoriter</h1>
+        <h2>Planetarium</h2>
+    </header>
+    <main class="favorites-main">
+        <span id="sol" class="planet"></span>
+
+        <div class="planet-card">
+            <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
+            <div class="container">
+                <h4>PLANET</h4>
             </div>
-            <div class="planet-card">
-                <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
-                <div class="container">
-                    <h4>PLANET NAME</h4>
-                </div>
+            <button class="removeBtn">Ta bort favorit</button>
+        </div>
+
+        <div class="planet-card">
+            <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
+            <div class="container">
+                <h4>PLANET</h4>
             </div>
-            <div class="planet-card">
-                <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
-                <div class="container">
-                    <h4>PLANET NAME</h4>
-                </div>
+            <button class="removeBtn">Ta bort favorit</button>
+        </div>
+        <div class="planet-card">
+            <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
+            <div class="container">
+                <h4>PLANET</h4>
             </div>
-        </main>
-        <footer>
-            <p>Copyright @ Group #7</p>
-        </footer>
-        <script src="./hidden-key.js"></script>
-        <script src="favorites.js"></script>
-    </body>
+            <button class="removeBtn">Ta bort favorit</button>
+        </div>
+        <div class="planet-card">
+            <img src="./planet-earth.jpg" class="planet-image" alt="planet image" />
+            <div class="container">
+                <h4>PLANET</h4>
+            </div>
+            <button class="removeBtn">Ta bort favorit</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright @ Group #7</p>
+    </footer>
+    <script src="./hidden-key.js"></script>
+    <script src="favorites.js"></script>
+</body>
+
 </html>
