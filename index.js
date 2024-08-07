@@ -6,7 +6,7 @@ window.addEventListener("load", async () => {
   let key = fetchPlanetsApiKey();
   let planetList = await fetchPlanets(key);
   storePlanets(planetList);
-  
+  changePageHeader()
 });
 
 // Alla
@@ -22,17 +22,29 @@ async function fetchPlanets() {
     return data.bodies;
 }
 
-
-
-
-
-
-
 // Alla
 // Display data in local storage
 function storePlanets(planetList) {
   localStorage.setItem('planetList', JSON.stringify(planetList));  
 };
+
+// Tatiana, Louise
+// Hover effect with header's name changing
+function changePageHeader() {
+    let planetNames = document.querySelectorAll('.planet'); // Array
+    let h1Ref = document.querySelector('h1');
+
+    planetNames.forEach(planet => {
+        planet.addEventListener('mouseover', () => {
+            h1Ref.innerHTML = `${planet.id.toString()}`;
+        });
+        planet.addEventListener('mouseout', () => {
+            h1Ref.innerHTML = 'Solsystemet';
+        });
+    })
+}
+
+
 
 // setItem(); add key and value to localStorage
 

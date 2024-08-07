@@ -121,7 +121,7 @@ h5 {
     aspect-ratio: 1;
 }
 
-.sun {
+#sun {
     width: 1278px;
     background-color: var(--sun-color);
     flex: 1;
@@ -130,42 +130,42 @@ h5 {
     right: 93%;
 }
 
-.mercury {
+#mercury {
     width: 14px;
     background-color: var(--mercury-color);
 }
 
-.venus {
+#venus {
     width: 26px;
     background-color: var(--venus-color);
 }
 
-.earth {
+#earth {
     width: 28px;
     background-color: var(--earth-color);
 }
 
-.mars {
+#mars {
     width: 14px;
     background-color: var(--mars-color);
 }
 
-.jupiter {
+#jupiter {
     width: 188px;
     background-color: var(--jupiter-color);
 }
 
-.saturn {
+#saturn {
     width: 144px;
     background-color: var(--saturn-color);
 }
 
-.uranus {
+#uranus {
     width: 66px;
     background-color: var(--uranus-color);
 }
 
-.neptune {
+#neptune {
     width: 66px;
     background-color: var(--neptune-color);
 }
