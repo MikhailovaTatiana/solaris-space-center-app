@@ -4,7 +4,9 @@
 // Window addeventlistener function
 window.addEventListener("load", async () => {
   let key = fetchPlanetsApiKey();
-  await fetchPlanets(key);
+  let planetList = await fetchPlanets(key);
+  storePlanets(planetList);
+  
 });
 
 // Alla
@@ -22,10 +24,19 @@ async function fetchPlanets() {
 
 
 
-// TODO
 
+
+
+
+// Alla
 // Display data in local storage
-// storePlanets() {};
+function storePlanets(planetList) {
+  localStorage.setItem('planetList', JSON.stringify(planetList));  
+};
+
+// setItem(); add key and value to localStorage
+
+// TODO
 
 // Create temlpate for a planet
 // function createPlanetCards() {};
