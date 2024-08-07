@@ -41,6 +41,10 @@ body {
     flex-direction: column;
 }
 
+.favorites-body {
+    overflow: visible;
+}
+
 .planet-header {
     height: 10%;
 }
@@ -50,7 +54,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-left: 10%;
-    
+
     a {
         text-decoration: none;
         color: skyblue;
@@ -121,7 +125,7 @@ h5 {
     aspect-ratio: 1;
 }
 
-#sun {
+#sol {
     width: 1278px;
     background-color: var(--sun-color);
     flex: 1;
@@ -130,7 +134,7 @@ h5 {
     right: 93%;
 }
 
-#mercury {
+#merkurius {
     width: 14px;
     background-color: var(--mercury-color);
 }
@@ -140,7 +144,7 @@ h5 {
     background-color: var(--venus-color);
 }
 
-#earth {
+#jorden {
     width: 28px;
     background-color: var(--earth-color);
 }
@@ -155,7 +159,7 @@ h5 {
     background-color: var(--jupiter-color);
 }
 
-#saturn {
+#saturnus {
     width: 144px;
     background-color: var(--saturn-color);
 }
@@ -165,7 +169,7 @@ h5 {
     background-color: var(--uranus-color);
 }
 
-#neptune {
+#neptunus {
     width: 66px;
     background-color: var(--neptune-color);
 }
@@ -215,7 +219,7 @@ h5 {
 
 .planet-data {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
 .info-left,
@@ -254,6 +258,7 @@ h5 {
     border-radius: 5px;
     text-transform: uppercase;
     font-size: .7rem;
+    border: none;
 }
 
 footer {
@@ -278,7 +283,7 @@ footer {
 
     .planet-card {
         height: 240px;
-        width: 180px;
+        width: 50%;
         border-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         background-color: var(--background-right-color);
@@ -295,6 +300,17 @@ footer {
             padding: 11px;
             letter-spacing: 0.2rem;
             word-spacing: 0.3rem;
+        }
+
+        .removeBtn {
+            width: max-content;
+            background-color: skyblue;
+            color: var(--background-left-color);
+            padding: .3rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: .7rem;
+            border: none;
         }
     }
 }
