@@ -28,3 +28,10 @@ function createPlanetInfo(selectedPlanet) {
       </article>
   `;  
 };
+
+function sendUserToFavorites() {
+    let btn = document.querySelector('#add-favorite-btn');
+    btn.addEventListener("click", () => {
+        window.open("./favorites.html", "_self");
+    });
+}

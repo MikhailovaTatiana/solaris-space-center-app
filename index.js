@@ -10,6 +10,8 @@ window.addEventListener("load", async () => {
 
   createPlanetInfo(selectedPlanet);
 
+  sendUserToFavorites();
+
   localStorage.clear();
 });
 
