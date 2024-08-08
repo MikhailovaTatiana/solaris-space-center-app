@@ -60,7 +60,7 @@ function createPlanetInfo() {
         </article>
       `;
 
-      
+
  // Add event listener to the favorite button
  const addFavoriteBtn = document.getElementById('add-favorite-btn');
  if (addFavoriteBtn) {
@@ -82,8 +82,11 @@ function addPlanetToFavorites(planet) {
       favorites.push(planet);
       localStorage.setItem("favorites", JSON.stringify(favorites));
       alert(`${planet.name} has been added to favorites.`);
+      window.location.href = 'favorites.html'
+
     } else {
       alert(`${planet.name} is already in favorites.`);
+       window.location.href = 'favorites.html'
     }
   }
 

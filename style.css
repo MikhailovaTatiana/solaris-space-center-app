@@ -180,7 +180,7 @@ h5 {
 }
 
 .planet-name {
-    margin-top: 2rem; 
+    margin-top: 2rem;
 }
 
 .planet-with-shadows {
@@ -220,8 +220,8 @@ h5 {
     flex-direction: column;
     justify-content: flex-start;
     /* enables vertical scrolling */
-    overflow-y: auto; 
-    max-height: 100vh; /
+    overflow-y: auto;
+    max-height: 100vh;/
 }
 
 .planet-data {
@@ -320,4 +320,18 @@ footer {
             border: none;
         }
     }
+
+
+    .no-favorites-message {
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.6;
+
+        text-align: center;
+        margin: 2rem 0;
+        padding: 1rem;
+
+    }
+
 }
