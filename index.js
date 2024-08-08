@@ -19,7 +19,7 @@ async function fetchPlanets() {
     headers: { "x-zocom": HIDDEN_KEY },
   });
   let data = await response.json();
-  console.log(data);
+  // console.log(data);
   return data.bodies;
 }
 

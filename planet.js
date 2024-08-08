@@ -18,7 +18,7 @@ function createPlanetInfo() {
   const selectedPlanetName = getQueryParameter("planet");
 
   if (!selectedPlanetName) {
-    console.error("No planet selected");
+    // console.error("No planet selected");
     return;
   }
 
@@ -59,9 +59,32 @@ function createPlanetInfo() {
           </section>                    
         </article>
       `;
-  } else {
-    console.error('Element with class "planet-info" not found.');
-  }
+
+      
+ // Add event listener to the favorite button
+ const addFavoriteBtn = document.getElementById('add-favorite-btn');
+ if (addFavoriteBtn) {
+   addFavoriteBtn.addEventListener('click', () => {
+     addPlanetToFavorites(selectedPlanet);
+   });
+ }
+} else {
+ console.error('Element with class "planet-info" not found.');
 }
+
+}
+
+function addPlanetToFavorites(planet) {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    
+    // Check if planet is already in favorites
+    if (!favorites.find(fav => fav.name === planet.name)) {
+      favorites.push(planet);
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+      alert(`${planet.name} has been added to favorites.`);
+    } else {
+      alert(`${planet.name} is already in favorites.`);
+    }
+  }
 
 document.addEventListener("DOMContentLoaded", createPlanetInfo);
