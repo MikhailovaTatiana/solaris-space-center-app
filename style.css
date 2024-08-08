@@ -34,7 +34,7 @@ body {
     padding: 1rem 2rem;
     height: 100vh;
     min-width: 990px;
-    overflow: hidden;
+    overflow: auto;
 
     /* for footer to stay on the bottom */
     display: flex;
@@ -179,6 +179,10 @@ h5 {
     text-align: left;
 }
 
+.planet-name {
+    margin-top: 2rem; 
+}
+
 .planet-with-shadows {
     flex: 1;
 }
@@ -214,7 +218,10 @@ h5 {
     align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* enables vertical scrolling */
+    overflow-y: auto; 
+    max-height: 100vh; /
 }
 
 .planet-data {
