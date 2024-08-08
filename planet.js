@@ -81,7 +81,7 @@ function addPlanetToFavorites(planet) {
     if (!favorites.find(fav => fav.name === planet.name)) {
       favorites.push(planet);
       localStorage.setItem("favorites", JSON.stringify(favorites));
-      alert(`${planet.name} has been added to favorites.`);
+    //   alert(`${planet.name} has been added to favorites.`);
       window.location.href = 'favorites.html'
 
     } else {
