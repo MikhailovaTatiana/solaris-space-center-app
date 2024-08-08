@@ -1,8 +1,7 @@
-// See the fetch in hidden_key.js locally
-
 // Alla
 // Window addeventlistener function
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => {
+
   let key = fetchPlanetsApiKey();
   let planetList = await fetchPlanets(key);
   storePlanets(planetList);
@@ -10,6 +9,7 @@ window.addEventListener("load", async () => {
   let planetName = choosePlanet();
   createPlanetInfo(planetName); // do toLowerCase() before comparing
 });
+
 
 // Alla
 // Fetch data using the key
@@ -23,11 +23,13 @@ async function fetchPlanets() {
   return data.bodies;
 }
 
+
 // Alla
 // Display data in local storage
 function storePlanets(planetList) {
   localStorage.setItem("planetList", JSON.stringify(planetList));
 }
+
 
 // Tatiana, Louise
 // Hover effect with header's name changing
@@ -45,20 +47,14 @@ function changePageHeader() {
   });
 }
 
-// Louise, Tatiana
-// when clicking on planet, redirect from home page to single planet page
+
+// Anna
 function choosePlanet() {
   let planetNamesList = document.querySelectorAll(".planet");
-  let planetName;
   planetNamesList.forEach((planet) => {
     planet.addEventListener("click", () => {
-      planetName = `${planet.id.toString()}`;
-      window.open("planet.html", "_self");
-      return planetName;
+      const planetName = planet.id.toString();
+      window.location.href = `planet.html?planet=${encodeURIComponent(planetName)}`;
     });
   });
 }
-
-// TODO
-// Create temlpate for a planet
-// function createPlanetCards() {};

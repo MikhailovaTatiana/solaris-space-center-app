@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 hidden-key.js
+keys.js
 
 # User-specific files
 *.rsuser
