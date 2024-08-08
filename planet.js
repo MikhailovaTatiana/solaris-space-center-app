@@ -29,9 +29,27 @@ function createPlanetInfo(selectedPlanet) {
   `;  
 };
 
-function sendUserToFavorites() {
+// Anna
+function addPlanetToFavorites(planet) {
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    
+    // Check if planet is already in favorites
+    if (!favorites.find(fav => fav.name === planet.name)) {
+        favorites.push(planet);
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        // alert(`${planet.name} has been added to favorites.`);
+        window.location.href = 'favorites.html'
+
+    } else {
+        alert(`${planet.name} is already in favorites.`);
+        // window.location.href = 'favorites.html'
+    }
+};
+
+// Tatiana
+function submitPlanetToFavorites(planet) {
     let btn = document.querySelector('#add-favorite-btn');
     btn.addEventListener("click", () => {
-        window.open("./favorites.html", "_self");
+        addPlanetToFavorites(planet);
     });
-}
+};
