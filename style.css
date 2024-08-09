@@ -103,7 +103,7 @@ h5 {
 }
 
 #moons {
-    height: 10rem;
+    height: 7rem;
     width: 30%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -281,17 +281,6 @@ footer {
 
 /* favorite page style */
 .favorites-main {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    min-height: 100vh;
-    width: 60%;
-    margin-top: 5rem;
-    margin-left: 20%;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem; */
-
     flex: 1;
     display: flex;
     justify-content: center;
@@ -301,14 +290,14 @@ footer {
     .favorite-cards {
         flex: 10;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 1rem;
         padding: 1.5rem 0;
         flex-wrap: wrap;
 
         .planet-card {
-            width: 15%;
+            height: 180px;
             aspect-ratio: 1;
             border-radius: 5px;
             box-shadow: 0 4px 8px 0 rgba(239, 238, 227, 0.2);
@@ -317,12 +306,10 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
     
-            img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 10px 10px 0 0;
+            .img {
+                margin-top: -40%;
             }
     
             h4 {
