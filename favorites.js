@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="container">
                     <h4>${planet.name}</h4>
                 </div>
-                <button class="removeButton" data-planet="${planet.name}">Ta bort favorit</button>
+                <button class="removeBtn" data-planet="${planet.name}">Ta bort favorit</button>
             </div>
             
 
