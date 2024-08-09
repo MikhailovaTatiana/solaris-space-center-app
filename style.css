@@ -290,17 +290,25 @@ footer {
     gap: 4rem;
 
     .planet-card {
-        height: 240px;
-        width: 50%;
+        height: auto;
+        width: 100%;
         border-radius: 5px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         background-color: var(--background-right-color);
+        margin: 2rem;
+        padding: 1rem;
+        align-items: center;
 
         img {
-            width: 100%;
+            width: auto;
             height: auto;
-            object-fit: cover;
+            max-width: 100%;
+            max-height: 400px;
+            /* object-fit: cover; */
+            object-fit: contain;
             border-radius: 10px 10px 0 0;
+            margin: 2rem 0;
+            padding: 1rem;
         }
 
         h4 {
