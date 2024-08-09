@@ -29,11 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="container">
                     <h4>${planet.name}</h4>
                 </div>
-                <button class="removeBtn" data-planet="${planet.name}">Ta bort favorit</button>
-            </div>
-            
-
-            
+                <button class="removeButton" data-planet="${planet.name}">Ta bort favorit</button>
+            </div>   
         `
       )
       .join("");

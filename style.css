@@ -41,11 +41,7 @@ body {
     flex-direction: column;
 }
 
-.favorites-body {
-    overflow: visible;
-}
-
-.planet-header {
+header {
     height: 10%;
 }
 
@@ -97,13 +93,7 @@ h5 {
 .home-main {
     /* for footer to stay on the bottom */
     flex: 1;
-
     display: flex;
-}
-
-.favorites-main {
-    /* for footer to stay on the bottom */
-    flex: 1;
 }
 
 .planet-main {
@@ -291,7 +281,7 @@ footer {
 
 /* favorite page style */
 .favorites-main {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     min-height: 100vh;
@@ -300,46 +290,59 @@ footer {
     margin-left: 20%;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 4rem; */
 
-    .planet-card {
-        height: auto;
-        width: 100%;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        background-color: var(--background-right-color);
-        margin: 2rem;
-        padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    .favorite-cards {
+        flex: 10;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        flex-wrap: wrap;
 
-        img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 400px;
-            /* object-fit: cover; */
-            object-fit: contain;
-            border-radius: 10px 10px 0 0;
-            margin: 2rem 0;
-            padding: 1rem;
-        }
-
-        h4 {
-            text-align: center;
-            padding: 11px;
-            letter-spacing: 0.2rem;
-            word-spacing: 0.3rem;
-        }
-
-        .removeBtn {
-            width: max-content;
-            background-color: skyblue;
-            color: var(--background-left-color);
-            padding: .3rem;
+        .planet-card {
+            width: 15%;
+            aspect-ratio: 1;
             border-radius: 5px;
-            text-transform: uppercase;
-            font-size: .7rem;
-            border: none;
+            box-shadow: 0 4px 8px 0 rgba(239, 238, 227, 0.2);
+            background-color: rgb(53, 53, 110);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+    
+            h4 {
+                text-align: center;
+                padding: 11px;
+                letter-spacing: 0.2rem;
+                word-spacing: 0.3rem;
+            }
+
+            .removeButton {
+                width: max-content;
+                background-color: skyblue;
+                color: var(--background-left-color);
+                padding: .2rem;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: .5rem;
+                border: none;
+                font-weight: 600;
+            }
         }
     }
 }
