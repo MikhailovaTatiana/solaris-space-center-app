@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
       return;
     }
+;
 
     favoritesContainer.innerHTML = favorites
       .map(
@@ -22,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="planet-card">
 
              <section class="planets">
-                <span class="planet planet-image img" id="jorden"></span>
-                <span class="planet planet-image img" id="saturnus"></span>
+                <span class="planet planet-image img" id="${planet.name.toLowerCase()}"></span> 
             </section>
                 
                 <div class="container">
