@@ -172,6 +172,19 @@ h5 {
     background-color: var(--saturn-color);
 }
 
+#saturnus-rings {
+    position: absolute;
+    background-color: var(--saturn-ring-color);
+    opacity: 0.8;
+    width: 218.23px;
+    height: 5.5px;
+    top: 51%;
+    left: 70%;
+    transform: translate(-50%, 50%) rotate(-30deg);
+    transform-origin: center;
+    border-radius: 50%;
+}
+
 #uranus {
     width: 66px;
     background-color: var(--uranus-color);
